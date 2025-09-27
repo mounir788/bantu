@@ -1,5 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contactForm");
+  const menuBtn = document.getElementById("menuBtn");
+  const menu = document.getElementById("menu");
+
+  menuBtn.addEventListener("click", function () {
+    menu.classList.toggle("active");
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!menuBtn.contains(event.target)) {
+      menu.classList.remove("active");
+    }
+  });
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();

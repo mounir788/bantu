@@ -135,13 +135,13 @@ textarea {
   height: 79px;
 }
 
-.header.sticky {
+/* .header.sticky {
   position: sticky;
   top: 0;
   background: rgba(255, 255, 255, 0.02);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
-}
+} */
 
 .header .container {
   height: 100%;
@@ -159,6 +159,7 @@ textarea {
 .header__link {
   font-weight: 500;
   padding: 10px 12px;
+  display: block;
 }
 
 .header__link:hover {
@@ -167,6 +168,10 @@ textarea {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+}
+
+.menu {
+  display: none;
 }
 
 .hero__section {
@@ -916,12 +921,48 @@ textarea {
   .header__links {
     display: none;
   }
+  .menu {
+    display: block;
+    position: relative;
+  }
+  .menu__btn {
+    width: 40px;
+    height: 40px;
+  }
+  .responsive__menu {
+    position: absolute;
+    top: 110%;
+    right: 0;
+    background: white;
+    border-radius: 10px;
+    min-width: 250px;
+    display: none;
+  }
+  .responsive__menu.active {
+    display: block;
+  }
+  .responsive__menu ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .header__link {
+    color: #020103;
+  }
+  .work__article {
+    margin-top: 80px;
+  }
+  .products__section .work__article {
+    margin-top: 0;
+  }
   .contact__section__article {
     flex-direction: column;
     align-items: flex-start;
   }
   br {
     display: none;
+  }
+  .contact__form {
+    width: 100%;
   }
 }
 
@@ -936,12 +977,6 @@ textarea {
   }
   .about__article {
     gap: 16px;
-  }
-  .work__article {
-    margin-top: 80px;
-  }
-  .products__section .work__article {
-    margin-top: 0;
   }
   .service__card {
     background-size: 60%;
