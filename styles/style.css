@@ -127,7 +127,9 @@ textarea {
 }
 
 .hero__container {
-  background: url(../images/mask-group.svg) no-repeat center;
+  background: url(../images/mask-group.svg) no-repeat center,
+    url(../images/shape1.svg) no-repeat right,
+    url(../images/shape2.svg) no-repeat bottom left;
 }
 
 .header {
@@ -290,7 +292,9 @@ textarea {
 
 .about {
   padding-top: 80px;
-  background: url(../images/vector2.svg) no-repeat center 120px;
+  background: url(../images/vector2.svg) no-repeat center 120px,
+    url(../images/shape3.svg) no-repeat top 50px left,
+    url(../images/shape4.svg) no-repeat bottom right;
 }
 
 .about__article {
@@ -416,7 +420,8 @@ textarea {
 }
 
 .products__section {
-  background: url(../images/vector3.svg) no-repeat top center;
+  background: url(../images/vector3.svg) no-repeat top center,
+    url(../images/shape5.svg) top 300px left / 40% no-repeat;
 }
 
 .slider__container {
@@ -589,7 +594,7 @@ textarea {
   gap: 12px;
 }
 
-.product__grid:nth-of-type(1) .product__card__article {
+.products__section .product__card__article {
   padding-bottom: 24px;
   border-bottom: 1px solid #635189;
 }
@@ -631,8 +636,11 @@ textarea {
 }
 
 .feedback__section {
-  margin-top: 24px;
-  background: url(../images/vector4.svg) no-repeat top 120px center;
+  padding-top: 24px;
+  background: url(../images/vector4.svg) no-repeat top 120px center,
+    url(../images/shape6.svg) no-repeat top -100px right,
+    url(../images/shape7.svg) no-repeat bottom left,
+    url(../images/shape8.svg) no-repeat bottom -100px right;
 }
 
 .feedback__wrapper {
@@ -724,7 +732,8 @@ textarea {
 }
 
 .last__sections {
-  /* background: #854cff99; */
+  background: url(../images/shape9.svg) no-repeat top left,
+    url(../images/shape10.svg) no-repeat bottom right;
 }
 
 .contact__section {
@@ -874,10 +883,17 @@ textarea {
   .work__grid:nth-of-type(2) {
     grid-template-columns: repeat(2, 1fr);
   }
-  .about,
-  .products__section,
+  .about {
+    background: url(../images/shape3.svg) no-repeat left top 200px,
+      url(../images/shape4.svg) no-repeat bottom right;
+  }
+  .products__section {
+    background: url(../images/shape5.svg) top left / no-repeat;
+  }
   .feedback__section {
-    background: none;
+    background: url(../images/shape6.svg) no-repeat top -100px right,
+      url(../images/shape7.svg) no-repeat center left,
+      url(../images/shape8.svg) no-repeat bottom -100px right;
   }
 
   .about__article .main__btn {
@@ -947,6 +963,11 @@ textarea {
   }
   .header__link {
     color: #020103;
+  }
+  .hero__container {
+    background: url(../images/mask-group.svg) no-repeat center,
+      url(../images/shape1.svg) no-repeat top,
+      url(../images/shape2.svg) no-repeat bottom;
   }
   .work__article {
     margin-top: 80px;
